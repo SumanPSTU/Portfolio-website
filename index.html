@@ -1,154 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <head>
+        <title>Portfolio | suman | pstu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--css link-->
+        <link rel="stylesheet" href="assets/styles.css">
+
+        <!-- favicon link -->
+        <link rel="shortcut icon" href="images/heart.png" type="image/x-icon">
+
+        <!--unicon link-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+    </head>
+    <body>
         <div class="container">
-            <a class="navbar-brand" href="index.html">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            <!--Header-->
+            <nav id="header">
+                <!--for logo-->
 
-    <!-- Hero Section -->
-    <section id="home" class="hero d-flex align-items-center">
-        <div class="container text-center" data-aos="zoom-in">
-            <h1 class="display-4">Hi, I'm John Doe</h1>
-            <p class="lead">Full Stack Developer</p>
-            <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
-        </div>
-    </section>
+                <div class="nav-logo">
+                    <p class="nav-name"><a href="#home" class="navname">Suman</a></p>
+                    <span>.</span>
+                </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <img src="images/about.jpg" class="img-fluid rounded" alt="About Me">
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h2 class="mb-4">About Me</h2>
-                    <p>I'm a passionate developer with 5+ years of experience in building web applications.</p>
-                    <div class="skills">
-                        <span class="badge badge-primary">HTML/CSS</span>
-                        <span class="badge badge-primary">JavaScript</span>
-                        <span class="badge badge-primary">React</span>
-                        <span class="badge badge-primary">Node.js</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <!--for navigation menu-->
+                <div class="nav-menu" id="my-nav-menu">
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">My Projects</h2>
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-md-4 mb-4" data-aos="flip-left">
-                    <div class="card project-card">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text">Built with MERN stack</p>
-                            <a href="#" class="btn btn-outline-primary">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="flip-left">
-                    <div class="card project-card">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text">Built with MERN stack</p>
-                            <a href="#" class="btn btn-outline-primary">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="flip-left">
-                    <div class="card project-card">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text">Built with MERN stack</p>
-                            <a href="#" class="btn btn-outline-primary">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="flip-left">
-                    <div class="card project-card">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text">Built with MERN stack</p>
-                            <a href="#" class="btn btn-outline-primary">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more projects similarly -->
-            </div>
-        </div>
-    </section>
+                    <ul class="nav-menu-list">
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Get In Touch</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
+                        <li class="nav-list">
+                            <a href="#home" class="nav-link">Home</a>
+                            <div class="circle"></div>
+                        </li>
+
+                        <li class="nav-list">
+                            <a href="#about" class="nav-link">About</a>
+                            <div class="circle"></div>
+                        </li>
+
+                        <li class="nav-list">
+                            <a href="#project" class="nav-link">Project</a>
+                            <div class="circle"></div>
+                        </li>
+
+                        <li class="nav-list">
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <div class="circle"></div>
+                        </li>
+                        
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <div class="social-links mb-3">
-                <a href="#" class="text-white mx-3"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white mx-3"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white mx-3"><i class="fab fa-twitter"></i></a>
-            </div>
-            <p>&copy; 2023 John Doe. All rights reserved.</p>
-        </div>
-    </footer>
+                <div class="nav-btm">
+                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-</body>
+
+
+            <!--content-->
+
+
+
+            <!--footer-->
+
+
+
+
+
+
+
+        </div>
+
+    
+
+
+
+        <!--typed js link-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!--scroll revel cdn-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--javascript-->
+        <script src="assets/script.js"></script>
+    </body>
 </html>
