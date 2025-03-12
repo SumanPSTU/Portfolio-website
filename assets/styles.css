@@ -28,6 +28,9 @@
     --first-color:rgb(110,87,224);
     --first-color-hocer:rgb(40,91,212);
 
-    --second-color:;
+    --second-color:rgb(0,210,255);
+    --third-color:rgb(192,166,49);
+
+    --first-shawdo-color:rgba(0,0,0,0.1);
 
 }
